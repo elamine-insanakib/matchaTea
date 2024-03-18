@@ -4,6 +4,12 @@
   font-style: italic;
 }
 
+.text-me-one-regular {
+  font-family: "Text Me One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 body {
   background-color: #8da9a9;
@@ -27,19 +33,63 @@ header > h1 {
 
 
 #hamburger {
-  margin-left: 4vw;
+  /* margin-left: 1%; */
   width: auto;
   height: 35%;
 }
 #profile {
-  margin-right: 4vw;
+  margin-right: 5vw;
   width: auto;
   height: 45%;
 
+}
+
+#sidebar.hidden {
+  transform: translateX(-100%); /* Modification de cette ligne */
+}
+
+#sidebar {
+  background-color: #e2c7af;
+  width: 20%;
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  gap: 15vh;
+  justify-content: center;
+  font-weight: 900;
+  transform: translateX(0); /* Ajout de cette ligne */
+  transition: transform 0.3s ease-out; /* Ajout de cette ligne */
+}
+
+#sidebar > a {
+  font-size: 3vh;
+  text-decoration: none;
+  color: #3d405b;
+  font-family: Text Me One, sans-serif;
+
+}
+
+.mobile-sidebar {
+  display: block;
+  height: auto;
+  width: 45%;
+}
+
+.desktop-sidebar {
+  display: none;
 }
 
 @media (min-width: 600px) {
   body {
     background-color: blue;
   }  
-}
+  
+    .desktop-sidebar {
+      display: block;
+    }
+
+    .mobile-sidebar {
+      display: none;
+    }
+  }

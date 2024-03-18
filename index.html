@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Molle&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Molle&family=Text+Me+One&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
@@ -15,5 +15,27 @@
     <h1>Matcha</h1>
     <img src="images/profile.svg" id="profile">
   </header>
+  <main>
+    <section id="sidebar">
+      <a class="desktop-sidebar">Vente</a>
+      <a class="desktop-sidebar">Histoire</a>
+      <a class="desktop-sidebar">Contact</a>
+      <a class="desktop-sidebar">À propos</a>
+      <img src="images/contact.svg" class="mobile-sidebar">
+      <img src="images/contact.svg" class="mobile-sidebar">
+      <img src="images/contact.svg" class="mobile-sidebar">
+      <img src="images/contact.svg" class="mobile-sidebar">
+    </section>
+  </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var hamburger = document.getElementById('hamburger');
+      var sidebar = document.getElementById('sidebar');
+  
+      hamburger.addEventListener('click', function() {
+        sidebar.classList.toggle('hidden');
+      });
+    });
+  </script>
 </body>
 </html>
