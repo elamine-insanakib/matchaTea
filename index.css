@@ -18,17 +18,34 @@ body {
 
 header {
   background-color: #e2c7af;
-  width: 100%;
-  height: 12vh;
   font-family: Molle, cursive;  
   display: flex;
+  flex-direction: row ;
   justify-content: space-between;
-  align-items: center;
 }
 
 header > h1 {
   font-size: 5vh;
   /* color: #3d405b; */
+}
+
+.sidebar-header {
+  height: 12vh;
+  border: 1px solid black;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header {
+  height: 12vh;
+  width: 60%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center ;
 }
 
 
@@ -38,15 +55,17 @@ header > h1 {
   height: 35%;
 }
 #profile {
-  margin-right: 5vw;
   width: auto;
   height: 45%;
 
 }
 
 #sidebar.hidden {
-  transform: translateX(-100%); /* Modification de cette ligne */
+  display: none;
+  /* transform: translateX(-100%); */
 }
+
+
 
 #sidebar {
   background-color: #e2c7af;
@@ -58,8 +77,8 @@ header > h1 {
   gap: 15vh;
   justify-content: center;
   font-weight: 900;
-  transform: translateX(0); /* Ajout de cette ligne */
-  transition: transform 0.3s ease-out; /* Ajout de cette ligne */
+  /* transform: translateX(0); 
+  transition: transform 0.3s ease-out;  */
 }
 
 #sidebar > a {
