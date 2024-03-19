@@ -61,7 +61,6 @@ header > h1 {
 }
 
 #sidebar.hidden {
-  display: none;
   transform: translateX(-100%);
 }
 
@@ -78,8 +77,9 @@ header > h1 {
   justify-content: center;
   font-weight: 900;
   transform: translateX(0); 
-  transition: transform 0.3s ease-out; 
+  transition: transform 0.3s ease-out;
 }
+
 
 #sidebar > a {
   font-size: 3vh;
@@ -90,7 +90,7 @@ header > h1 {
 }
 
 .mobile-sidebar {
-  display: block;
+  display: flex;
   height: auto;
   width: 45%;
 }
@@ -105,7 +105,7 @@ header > h1 {
   }  
   
     .desktop-sidebar {
-      display: block;
+      display: flex;
     }
 
     .mobile-sidebar {

@@ -27,23 +27,28 @@
   </header>
   <main>
     <section id="sidebar">
-      <a class="desktop-sidebar">Vente</a>
+      <a href="" class="desktop-sidebar">Vente</a>
       <a class="desktop-sidebar">Histoire</a>
-      <a class="desktop-sidebar">Contact</a>
+      <a href="contact.html" class="desktop-sidebar">Contact</a>
       <a class="desktop-sidebar">À propos</a>
       <img src="images/contact.svg" class="mobile-sidebar">
       <img src="images/contact.svg" class="mobile-sidebar">
       <img src="images/contact.svg" class="mobile-sidebar">
       <img src="images/contact.svg" class="mobile-sidebar">
     </section>
+    <section id="content">
+
+    </section>
   </main>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       var hamburger = document.getElementById('hamburger');
       var sidebar = document.getElementById('sidebar');
+      var content = document.getElementById('content');
   
       hamburger.addEventListener('click', function() {
         sidebar.classList.toggle('hidden');
+        content.classList.toggle('full');
       });
     });
   </script>
