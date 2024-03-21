@@ -292,6 +292,94 @@ body {
     opacity: 70%;
    }
 
+   /*Gestion stock*/
+
+   .ligne-titre {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10vh 0vh;
+   }
+
+   .ligne-titre button {
+    background-color: #BBC65E;
+    font-size: large;
+    height: 7vh;
+    width: 15vw;
+    border-radius: 20px;
+    border-style: none;
+   }
+
+   article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:10vh 0vw;
+   }
+
+   .article {
+    z-index: 2;
+    width: 80vw;
+    background-color: #BBC65E;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vh 1.5vw;
+    margin: 0vh 1vw
+   }
+
+   .article img {
+    width: 5vw;
+    height: 5vw;
+   }
+
+   .asset-article {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .button-item{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .button-item button {
+    margin: 0.3vh 0vw;
+   }
+
+   .info-article {
+    z-index: 1;
+    margin: -2vh 0vh;
+    background-color: #D3D993;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 1vh 1.5vw;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+   }
+
+   .add {
+    background-color: green;
+    border-style: none;
+    border-radius: 20px;
+   }
+
+   .del {
+    background-color: red;
+    border-style: none;
+    border-radius: 20px;
+   }
+
+   .mod {
+    background-color: gray;
+    border-style: none;
+    border-radius: 20px;
+   }
+
    /* Media Queries */
   @media screen and (max-width:600px) {
 
@@ -377,5 +465,34 @@ body {
 
      .team img {
       width: 50vw;
+     }
+
+     /* Gestion stock */
+
+     .ligne-titre{
+      flex-direction: column;
+     }
+
+     .ligne-titre button {
+      width: 50%;
+     }
+
+     .article{
+      flex-direction: column;
+     }
+
+     .article button
+     {
+      margin: 1vh 0vh;
+     }
+
+     .article img {
+      width:50%;
+      height:50%
+     }
+
+     .info-article {
+      text-align: center;
+      flex-direction: column;
      }
   }
