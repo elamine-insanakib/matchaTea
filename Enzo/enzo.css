@@ -381,6 +381,7 @@ body {
    }
 
    footer {
+    background-color: #e2c7af;
     display: flex;
     justify-content: space-between;
     align-items: center;
