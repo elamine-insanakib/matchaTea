@@ -151,6 +151,11 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  #article-vente {
+    display: flex;
+    flex-direction: row;
+  }
   
   .asset-article {
     width: 20%;
@@ -381,14 +386,17 @@ body {
    }
 
    footer {
+    position:absolute;
+    bottom: -0.5;
+    width: 100%;
     background-color: #e2c7af;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:0px 2vw;
    }
 
    footer a {
+    margin: 0% 2%;
     width: 15%;
     text-decoration: none;
    }
@@ -522,5 +530,25 @@ body {
      .info-article {
       text-align: center;
       flex-direction: column;
+     }
+
+     footer h1 {
+      font-size: medium;
+     }
+
+     footer a {
+      width: 30%;
+     }
+
+     footer p {
+      font-size: small;
+     }
+
+     .image-footer {
+      width: 20%
+     }
+
+     .image-footer img {
+      width:3vw;
      }
   }
