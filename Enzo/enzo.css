@@ -380,6 +380,33 @@ body {
     border-radius: 20px;
    }
 
+   footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 2vw;
+   }
+
+   footer a {
+    width: 15%;
+    text-decoration: none;
+   }
+
+   footer h1 {
+    color: black;
+   }
+
+   .image-footer {
+    display: flex;
+    width: 15%;
+    justify-content:space-around;
+   }
+
+   .image-footer img {
+    width:2vw;
+    height: auto;
+   }
+
    /* Media Queries */
   @media screen and (max-width:600px) {
 
