@@ -6,6 +6,67 @@ body {
     margin: 0;
     padding: 0;
   }
+
+  main {
+    display: flex;
+    width: 100%;
+    text-align: center;    
+    flex-direction: row;
+  }
+
+  #main-stock {
+    display: flex;
+  }
+
+  #content {
+    width: 80%;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: red; */
+  }
+  
+  #content.full {
+    width: 100%;
+    height: 88vh;
+  }
+  
+  #sidebar.hidden {
+    display: none;
+  }
+  
+  #sidebar {
+    background-color: #e2c7af;
+    width: 50%;
+    height: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 15vh;
+    justify-content: center;
+    font-weight: 900;
+  }
+  
+  
+  #sidebar > a {
+    font-size: 3vh;
+    text-decoration: none;
+    color: #3d405b;
+    font-family: Text Me One, sans-serif;
+  
+  }
+  
+  .mobile-sidebar {
+    display: flex;
+    height: auto;
+    width: 45%;
+  }
+  
+  .desktop-sidebar {
+    display: none;
+  }
   
   /* Styles pour le header */
   header {
@@ -26,7 +87,6 @@ body {
   
   .sidebar-header {
     height: 12vh;
-    border: 1px solid black;
     width: 20%;
     display: flex;
     align-items: center;
@@ -36,7 +96,6 @@ body {
   #header {
     height: 12vh;
     width: 60%;
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -83,11 +142,6 @@ body {
     display: none;
   }
   
-  @media (min-width: 600px) {
-    body {
-      background-color: #F3F2DC;
-    }  
-  
     .desktop-sidebar {
       display: flex;
     }
@@ -95,7 +149,7 @@ body {
     .mobile-sidebar {
       display: none;
     }
-  }
+  
   
   /* CSS ENZO */
 
@@ -151,7 +205,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
-
   #article-vente {
     display: flex;
     flex-direction: row;
@@ -241,13 +294,14 @@ body {
    }
   
    .team img {
-    width: 20vw;
+    width: 15vw;
     height: auto;
    }
 
    /*CSS profil*/
 
    .profil {
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -299,7 +353,15 @@ body {
 
    /*Gestion stock*/
 
+   #gestion-stock {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;   
+  }
+
    .ligne-titre {
+    width: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -324,7 +386,7 @@ body {
 
    .article {
     z-index: 2;
-    width: 80vw;
+    width: 100%;
     background-color: #BBC65E;
     border-radius: 20px;
     display: flex;
@@ -357,7 +419,7 @@ body {
     z-index: 1;
     margin: -2vh 0vh;
     background-color: #D3D993;
-    width: 80vw;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 1vh 1.5vw;
@@ -386,10 +448,10 @@ body {
    }
 
    footer {
-    position:absolute;
-    bottom: -0.5;
+    position:relative;
+    bottom: -0.1;
     width: 100%;
-    background-color: #e2c7af;
+    background-color: #c1c59b;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -482,13 +544,15 @@ body {
 
     /*Media pour equipe*/
     .team {
-      flex-direction: column;
+      display: flex;
+      max-height:90% ;
       justify-content: center;
-      align-content: center;
+      margin: 0px 10%;
+      overflow-y: scroll;
      }
 
      .team div {
-      width: 80%;
+      width: 100%;
       align-content: center;
       justify-content: center;
       text-align: center;
@@ -500,7 +564,7 @@ body {
      }
 
      .team img {
-      width: 50vw;
+      width: 30vw;
      }
 
      /* Gestion stock */

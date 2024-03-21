@@ -25,33 +25,63 @@
     </section>
   
   </header> <!--FIN DU HEADER ET BURGER MENU-->
+  <main>
 
-  <h1 id="dream-team">La dream team</h1>
+    <section id="sidebar">
+      <a href="" class="desktop-sidebar">Vente</a>
+      <a class="desktop-sidebar">Histoire</a>
+      <a href="contact.html" class="desktop-sidebar">Contact</a>
+      <a class="desktop-sidebar">À propos</a>
+      <img src="../images/contact.svg" class="mobile-sidebar">
+      <img src="../images/contact.svg" class="mobile-sidebar">
+      <img src="../images/contact.svg" class="mobile-sidebar">
+      <img src="../images/contact.svg" class="mobile-sidebar">
+    </section>
+    <section id="content">
+      
+        
+        <article class="team">
+<!--<h1 id="dream-team">La dream team</h1>-->
 
-  <article class="team">
-    <div id="Adlan">
-        <h3>L'artiste</h3>
-        <img src="../images/profile.svg" alt="photo-adlan">
-        <p>Description Adlan</p>
-    </div>
-    <div id="Elamine">
-        <h3>Le studieux</h3>
-        <img src="../images/profile.svg" alt="photo-Elamine">
-        <p>Description Adlan</p>
-    </div>
-    <div id="Enzo">
-        <h3>L'ingenieur</h3>
-        <img src="../images/photo_profil.png" alt="photo-Enzo">
-        <p>Ancien chef pâtissier en restauration, il a décidé de tout plaqué pour changer de voie, et concocter de bons petits morceaux de codes. Âgé de 26 ans, il reprend ses études à la Plateforme, école pour laquelle il crée ce site en parlant de lui à la 3e personne (bizarre...)</p>
-    </div>
-  </article>
-  <footer>
-    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0?"><p>Mentions legale</p></a>
-    <a href="http://index.html"><h1>Matcha</h1></a>
-    <div class="image-footer">
+          <div id="Adlan">
+            <h3>L'artiste</h3>
+            <img src="../images/profile.svg" alt="photo-adlan">
+            <p>Description Adlan</p>
+          </div>
+          <div id="Elamine">
+            <h3>Le studieux</h3>
+            <img src="../images/profile.svg" alt="photo-Elamine">
+            <p>Description Adlan</p>
+          </div>
+          <div id="Enzo">
+            <h3>L'ingenieur</h3>
+            <img src="../images/photo_profil.png" alt="photo-Enzo">
+            <p>Ancien chef pâtissier en restauration, il a décidé de tout plaqué pour changer de voie, et concocter de bons petits morceaux de codes. Âgé de 26 ans, il reprend ses études à la Plateforme, école pour laquelle il crée ce site en parlant de lui à la 3e personne (bizarre...)</p>
+          </div>
+        </article>
+    </section>
+    </main>
+      <footer>
+        <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0?"><p>Mentions legale</p></a>
+        <a href="http://index.html"><h1>Matcha</h1></a>
+        <div class="image-footer">
         <a href="http://facebook.com" target="_blank"><img src="../images/facebook-app-symbol.png" alt=""></a>
         <a href="http://twitter.com" target="_blank"><img src="../images/social-media.png" alt=""></a>
         <a href="http://instagram.com" target="_blank"><img src="../images/instagram.png" alt=""></a>
     </div>
 </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var hamburger = document.getElementById('hamburger');
+    var sidebar = document.getElementById('sidebar');
+    var content = document.getElementById('content');
+
+    hamburger.addEventListener('click', function() {
+      sidebar.classList.toggle('hidden');
+      content.classList.toggle('full');
+    });
+  });
+</script>
+
 </body>

@@ -25,18 +25,30 @@
     </section>
   
   </header> <!--FIN DU HEADER ET BURGER MENU-->
+    <main>
+    <section id="sidebar">
+      <a href="" class="desktop-sidebar">Vente</a>
+      <a class="desktop-sidebar">Histoire</a>
+      <a href="contact.html" class="desktop-sidebar">Contact</a>
+      <a class="desktop-sidebar">À propos</a>
+      <img src="images/contact.svg" class="mobile-sidebar">
+      <img src="images/contact.svg" class="mobile-sidebar">
+      <img src="images/contact.svg" class="mobile-sidebar">
+      <img src="images/contact.svg" class="mobile-sidebar">
+    </section>
 
-  <article class="profil">
-    <div id="image-profil">
-      <img src="../images/profile.svg">
-      <img src="../images/crayon.png" id="crayon">
-    </div>
-      <input type="text" name="nom" id="nom" placeholder="Nom">
-      <input type="text" name="prenom" id="prenom" placeholder="Prenom">
-      <input type="mail" name="mail" id="mail" placeholder="Mail">
-      <input type="tel" name="tel" id="tel" placeholder="Numéro telephone">
-      <button type="submit">Valider</button>
-  </article>
+    <article class="profil">
+      <div id="image-profil">
+        <img src="../images/profile.svg">
+        <img src="../images/crayon.png" id="crayon">
+      </div>
+        <input type="text" name="nom" id="nom" placeholder="Nom">
+        <input type="text" name="prenom" id="prenom" placeholder="Prenom">
+        <input type="mail" name="mail" id="mail" placeholder="Mail">
+        <input type="tel" name="tel" id="tel" placeholder="Numéro telephone">
+        <button type="submit">Valider</button>
+    </article>
+  </main>
   <footer>
     <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0?"><p>Mentions legale</p></a>
     <a href="http://index.html"><h1>Matcha</h1></a>
@@ -46,4 +58,17 @@
         <a href="http://instagram.com" target="_blank"><img src="../images/instagram.png" alt=""></a>
     </div>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var hamburger = document.getElementById('hamburger');
+      var sidebar = document.getElementById('sidebar');
+      var content = document.getElementById('content');
+  
+      hamburger.addEventListener('click', function() {
+        sidebar.classList.toggle('hidden');
+        content.classList.toggle('full');
+      });
+    });
+  </script>
 </body>
