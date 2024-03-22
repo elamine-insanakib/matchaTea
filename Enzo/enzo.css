@@ -201,6 +201,10 @@ body {
     height: 8vh;
     width: 8vw;
   }
+
+  #nav-bar button:hover {
+    background-color: rgb(182, 182, 182);
+  }
   
   #nav-bar button img {
     display: none; 
@@ -251,7 +255,7 @@ body {
     border-bottom-left-radius: 80vw;
   }
 
-  .div-button-add-remove .button-down:hover, .div-button-add-remove .button-up:hover {
+  .div-button-add-remove .button-down:hover, .div-button-add-remove .button-up:hover,   .div-button-add-remove .button-submit:hover {
     background-color: #939b4b;
   }
   
@@ -283,14 +287,12 @@ body {
 
    /*CSS pour equipe*/
 
-  #dream-team {
-    margin: 5vw;
-   }
 
    .team {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height: 70vh;
    }
 
    .team div {
