@@ -31,6 +31,18 @@
     <div id="button-filter"><button><p>Filtre</p><img src="../images/filtre.png" alt=""></button></div>
     <div id="button-selecting"><button><p>Tri</p><img src="../images/trier-par-ordre-croissant.png" alt=""></button></div>
   </div> <!--FIN DE LA NAV BAR-->
+
+  <section id="sidebar">
+    <a href="" class="desktop-sidebar">Vente</a>
+    <a class="desktop-sidebar">Histoire</a>
+    <a href="contact.html" class="desktop-sidebar">Contact</a>
+    <a class="desktop-sidebar">À propos</a>
+    <img src="images/contact.svg" class="mobile-sidebar">
+    <img src="images/contact.svg" class="mobile-sidebar">
+    <img src="images/contact.svg" class="mobile-sidebar">
+    <img src="images/contact.svg" class="mobile-sidebar">
+  </section>
+
   <h1 id="New-flavours">Nouvelles saveurs</h1>
   <article>
     <div id="asset-article-vanille" class="asset-article">
@@ -103,5 +115,19 @@
         <a href="http://instagram.com" target="_blank"><img src="../images/instagram.png" alt=""></a>
     </div>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var hamburger = document.getElementById('hamburger');
+      var sidebar = document.getElementById('sidebar');
+      var content = document.getElementById('content');
+  
+      hamburger.addEventListener('click', function() {
+        sidebar.classList.toggle('hidden');
+        content.classList.toggle('full');
+      });
+    });
+  </script>
+  
 </body>
 </html>
