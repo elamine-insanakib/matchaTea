@@ -25,6 +25,17 @@
     </section>
   
   </header> <!--FIN DU HEADER ET BURGER MENU-->
+
+  <section id="sidebar" class="hidden">
+    <a href="" class="desktop-sidebar">Vente</a>
+    <a class="desktop-sidebar">Histoire</a>
+    <a href="contact.html" class="desktop-sidebar">Contact</a>
+    <a class="desktop-sidebar">À propos</a>
+    <img src="images/contact.svg" class="mobile-sidebar">
+    <img src="images/contact.svg" class="mobile-sidebar">
+    <img src="images/contact.svg" class="mobile-sidebar">
+    <img src="images/contact.svg" class="mobile-sidebar">
+  </section>
         
         <article class="team">
 <!--<h1 id="dream-team">La dream team</h1>-->
@@ -55,5 +66,16 @@
         <a href="http://instagram.com" target="_blank"><img src="../images/instagram.png" alt=""></a>
     </div>
 </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var hamburger = document.getElementById('hamburger');
+    var sidebar = document.getElementById('sidebar');
+  
+    hamburger.addEventListener('click', function() {
+      sidebar.classList.toggle('hidden'); // Changez 'full' en 'hidden'
+    });
+  });
+</script>
 
 </body>

@@ -32,7 +32,7 @@
     <div id="button-selecting"><button><p>Tri</p><img src="../images/trier-par-ordre-croissant.png" alt=""></button></div>
   </div> <!--FIN DE LA NAV BAR-->
 
-  <section id="sidebar">
+  <section id="sidebar" class="hidden">
     <a href="" class="desktop-sidebar">Vente</a>
     <a class="desktop-sidebar">Histoire</a>
     <a href="contact.html" class="desktop-sidebar">Contact</a>
@@ -120,11 +120,9 @@
     document.addEventListener('DOMContentLoaded', function() {
       var hamburger = document.getElementById('hamburger');
       var sidebar = document.getElementById('sidebar');
-      var content = document.getElementById('content');
-  
+    
       hamburger.addEventListener('click', function() {
-        sidebar.classList.toggle('hidden');
-        content.classList.toggle('full');
+        sidebar.classList.toggle('hidden'); // Changez 'full' en 'hidden'
       });
     });
   </script>
