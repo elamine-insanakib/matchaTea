@@ -301,7 +301,7 @@ body {
    /*CSS profil*/
 
    .profil {
-    width: 80%;
+    width: 88%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -481,6 +481,7 @@ body {
    /* Media Queries */
   @media screen and (max-width:600px) {
 
+
     /*Media pour vente*/
 
     body {
@@ -538,8 +539,8 @@ body {
     }
   
     .button-submit img {
-      width: 6vw;
-      height: auto;
+      width: 1vw;
+      height: 0.6vw;
     }
 
     /*Media pour equipe*/
@@ -578,7 +579,7 @@ body {
      }
 
      .article{
-      flex-direction: row;
+      flex-direction: column;
      }
 
      .article button
@@ -614,5 +615,26 @@ body {
 
      .image-footer img {
       width:3vw;
+     }
+
+     /*Media pour le profil */
+
+     article.profil {
+      margin-top: 10vh;
+      justify-content: center;
+     }
+
+     article.profil input {
+      width: 100%;
+      margin: 3vh 0vh;
+     }
+
+     .profil button {
+      width: 20%;
+      height: 10%;
+     }
+
+     footer {
+      display: none;
      }
   }

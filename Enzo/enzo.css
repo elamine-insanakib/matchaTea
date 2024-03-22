@@ -38,6 +38,9 @@ body {
   }
   
   #sidebar {
+    position:fixed;
+    left: 0;
+    z-index: 5;
     background-color: #e2c7af;
     width: 50%;
     height: 120%;
@@ -199,7 +202,7 @@ body {
     display: none; 
   }
   
-  /* Styles pour les articles */
+  /* Styles pour la vente */
   article {
     display: flex;
     flex-wrap: wrap;
@@ -270,7 +273,7 @@ body {
     width: auto;
   }
 
-   /*CSS pour vente*/
+   /*CSS pour equipe*/
 
   #dream-team {
     margin: 5vw;
@@ -301,7 +304,7 @@ body {
    /*CSS profil*/
 
    .profil {
-    width: 80%;
+    width: 88%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -379,7 +382,6 @@ body {
 
    article{
     display: flex;
-    flex-direction: column;
     flex-direction: row;
     align-items: center;
     margin:10vh 0vw;
@@ -398,12 +400,11 @@ body {
    }
 
    .article img {
-    width:50%;
-    height:50%
+    width: 5vw;
+    height: 5vw;
    }
 
    .asset-article {
-    width: 80%;
     display: flex;
     flex-direction: column;
    }
@@ -429,8 +430,6 @@ body {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    text-align: center;
-    flex-direction: column;
    }
 
    .add {
@@ -485,6 +484,7 @@ body {
    /* Media Queries */
   @media screen and (max-width:600px) {
 
+
     /*Media pour vente*/
 
     body {
@@ -521,20 +521,33 @@ body {
       height: 6vh;
     }
   
+    article {
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    .asset-article {
+      width: 80%;
+    }
+  
     .div-button-add-remove .button-down,
     .div-button-add-remove .button-up,
     .div-button-add-remove .button-text,
     .div-button-add-remove .button-submit {
       display: flex;
+      align-items: center;
       width: 10vw;
       height: 11vw;
       justify-content: center;
-      align-content: center;
+    }
+
+    .button-submit {
+      align-items: center;
     }
   
     .button-submit img {
       width: 6vw;
-      height: auto;
+      height: 6vw;
     }
 
     /*Media pour equipe*/
@@ -572,9 +585,23 @@ body {
       width: 50%;
      }
 
+     .article{
+      flex-direction: column;
+     }
+
      .article button
      {
       margin: 1vh 0vh;
+     }
+
+     .article img {
+      width:50%;
+      height:50%
+     }
+
+     .info-article {
+      text-align: center;
+      flex-direction: column;
      }
 
      footer h1 {
@@ -595,5 +622,26 @@ body {
 
      .image-footer img {
       width:3vw;
+     }
+
+     /*Media pour le profil */
+
+     article.profil {
+      margin-top: 10vh;
+      justify-content: center;
+     }
+
+     article.profil input {
+      width: 100%;
+      margin: 3vh 0vh;
+     }
+
+     .profil button {
+      width: 20%;
+      height: 10%;
+     }
+
+     footer {
+      display: none;
      }
   }
