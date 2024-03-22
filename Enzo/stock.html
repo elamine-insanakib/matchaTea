@@ -25,6 +25,18 @@
     </section>
   
   </header> <!--FIN DU HEADER ET BURGER MENU-->
+
+  <section id="sidebar">
+    <a href="" class="desktop-sidebar">Vente</a>
+    <a class="desktop-sidebar">Histoire</a>
+    <a href="contact.html" class="desktop-sidebar">Contact</a>
+    <a class="desktop-sidebar">À propos</a>
+    <img src="images/contact.svg" class="mobile-sidebar">
+    <img src="images/contact.svg" class="mobile-sidebar">
+    <img src="images/contact.svg" class="mobile-sidebar">
+    <img src="images/contact.svg" class="mobile-sidebar">
+  </section>
+
     <div id="gestion-stock">
                 <div class="ligne-titre">
                     <h1>Gestionnaire des stocks</h1>
@@ -154,5 +166,18 @@
         <a href="http://instagram.com" target="_blank"><img src="../images/instagram.png" alt=""></a>
     </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var hamburger = document.getElementById('hamburger');
+          var sidebar = document.getElementById('sidebar');
+          var content = document.getElementById('content');
+      
+          hamburger.addEventListener('click', function() {
+            sidebar.classList.toggle('hidden');
+            content.classList.toggle('full');
+          });
+        });
+      </script>
 
   </body>
