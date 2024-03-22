@@ -25,20 +25,7 @@
     </section>
   
   </header> <!--FIN DU HEADER ET BURGER MENU-->
-
-  <main id="main-stock">
-
-        <section id="sidebar">
-            <a href="" class="desktop-sidebar">Vente</a>
-            <a class="desktop-sidebar">Histoire</a>
-            <a href="contact.html" class="desktop-sidebar">Contact</a>
-            <a class="desktop-sidebar">À propos</a>
-            <img src="../images/contact.svg" class="mobile-sidebar">
-            <img src="../images/contact.svg" class="mobile-sidebar">
-            <img src="../images/contact.svg" class="mobile-sidebar">
-            <img src="../images/contact.svg" class="mobile-sidebar">
-        </section>
-        <div id="gestion-stock">
+    <div id="gestion-stock">
                 <div class="ligne-titre">
                     <h1>Gestionnaire des stocks</h1>
                     <button>Add new item</button>
@@ -157,8 +144,7 @@
                 <p>Date de mise en ligne : 01/01/2024</p>
             </div>
                 </article>
-        </div>
-    </main>
+    </div>
     <footer>
     <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0?"><p>Mentions legale</p></a>
     <a href="http://index.html"><h1>Matcha</h1></a>
@@ -169,16 +155,4 @@
     </div>
     </footer>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var hamburger = document.getElementById('hamburger');
-      var sidebar = document.getElementById('sidebar');
-      var content = document.getElementById('content');
-  
-      hamburger.addEventListener('click', function() {
-        sidebar.classList.toggle('hidden');
-        content.classList.toggle('full');
-      });
-    });
-  </script>
   </body>

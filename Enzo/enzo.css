@@ -356,12 +356,12 @@ body {
    #gestion-stock {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    text-align: center;   
-  }
+    width: 100%;
+    justify-content: center;
+   }
 
    .ligne-titre {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -379,14 +379,14 @@ body {
 
    article{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     margin:10vh 0vw;
    }
 
    .article {
     z-index: 2;
-    width: 100%;
+    width: 80%;
     background-color: #BBC65E;
     border-radius: 20px;
     display: flex;
@@ -419,7 +419,7 @@ body {
     z-index: 1;
     margin: -2vh 0vh;
     background-color: #D3D993;
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     padding: 1vh 1.5vw;
@@ -578,7 +578,7 @@ body {
      }
 
      .article{
-      flex-direction: column;
+      flex-direction: row;
      }
 
      .article button
