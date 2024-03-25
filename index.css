@@ -77,8 +77,6 @@ header > h1 {
 }
 
 #sidebar {
-  position: fixed;
-  left: 0px;
   background-color: #e2c7af;
   width: 20%;
   height: 88vh;
