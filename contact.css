@@ -114,9 +114,93 @@ header > h1 {
   display: none;
 }
 
+
+#form {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+}
+
+#form-container {
+  width: 80%;
+  height: 87vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #8da9a9;
+  align-items: center;
+}
+
+#form-left {
+  display: flex;
+  flex-direction: column;
+  /* border: 5px solid black; */
+  height: 100%;
+  width: 80%;
+  gap: 3vh;
+}
+
+input {
+  width: 90%;
+  height: 40%;
+  background-color: #e2c7af;
+  font-family: "Text Me One", sans-serif;
+}
+
+label {
+  font-size: 20px;
+  font-family: "Text Me One", sans-serif;
+  margin-bottom: 15px;
+}
+
+select {
+  width: 90%;
+  height: 40%;
+  background-color: #e2c7af;
+  font-family: "Text Me One", sans-serif;
+}
+
+
+.label-input {
+  margin-top: auto;
+  margin-bottom: auto ;
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  /* border: 2px solid black; */
+}
+
+#area {
+  height: 60%;
+  margin-top: auto;
+  margin-bottom: auto ;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  width: 90%;
+  height: 60%;
+  margin-bottom: auto ;
+  background-color: #e2c7af;
+}
+
+
+#form-right {
+  margin-left: 2vw;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+}
+
+
 @media (min-width: 600px) {
   body {
-    background-color: #8da9a9;
+    /* background-color: red; */
   }  
   
     .desktop-sidebar {
@@ -126,591 +210,43 @@ header > h1 {
     .mobile-sidebar {
       display: none;
     }
+
+    #form {
+      display: flex;
+      flex-direction: row;
+      /* background-color: red; */
+      align-items: center;
+      justify-content: space-between;
+      gap: 10vw;
+      height: 100%;
+      width: 75%;
   }
 
-#form-container {
-  width: 80%;
-  height: 87vh;
-  display: flex;
-  flex-direction: column;
-  background-color: #8da9a9;
-  align-items: center;
-  border: 5px solid black;
-}
-
-#form {
-  display: flex;
-  /* flex-direction: row; */
-  align-items: center;
-  justify-content: space-between;
-  border: 5px solid black;
-  gap: 10vw;
-  height: 60%;
-  width: 75%;
-}
-
-#form-left {
-  display: flex;
-  flex-direction: column;
-  border: 5px solid black;
-  height: 100%;
-  width: 40%;
-  gap: 5vh;
-}
-
-input {
-  width: 80%;
-  height: 30%;
-  color: #e2c7af;
-  background-color: #e2c7af;
-}
-
-label {
-  font-size: 20px;
-  font-family: "Text Me One", sans-serif;
-  margin-bottom: 15px;
-}
-
-.label-input {
-  display: flex;
-  flex-direction: column;
-  height: 20%;
-  border: 2px solid black;
-}
-
-#form-right {
-  display: flex;
-  flex-direction: column;
-  border: 5px solid black;
-  height: 100%;
-  width: 40%;
-}
-
-/* CSS DE ADLAN POUR LE HEADER ET LE BURGER MENU */
-
-/* Styles généraux */
-body {
-  background-color: #F3F2DC;
-  margin: 0;
-  padding: 0;
-}
-
-/* Styles pour le header */
-header {
-  background-color: #e2c7af;
-  font-family: Molle, cursive;  
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-header > h1 {
-  font-size: 5vh;
-}
-
-h6 {
-  font-size: large;
-}
-
-.sidebar-header {
-  height: 12vh;
-  border: 1px solid black;
-  width: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#header {
-  height: 12vh;
-  width: 60%;
-  border: 1px solid red;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-#hamburger, #profile {
-  width: auto;
-  height: 35%;
-}
-
-#sidebar.hidden {
-  transform: translateX(-100%);
-}
-
-#sidebar {
-  background-color: #e2c7af;
-  width: 20%;
-  height: 88vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15vh;
-  justify-content: center;
-  font-weight: 900;
-  transform: translateX(0); 
-  transition: transform 0.3s ease-out;
-}
-
-#sidebar > a {
-  font-size: 3vh;
-  text-decoration: none;
-  color: #3d405b;
-  font-family: Text Me One, sans-serif;
-}
-
-.mobile-sidebar {
-  display: flex;
-  height: auto;
-  width: 45%;
-}
-
-.desktop-sidebar {
-  display: none;
-}
-
-@media (min-width: 600px) {
-  body {
-    background-color: #F3F2DC;
-  }  
-
-  .desktop-sidebar {
+  #form-left {
     display: flex;
+    flex-direction: column;
+    /* border: 5px solid black; */
+    height: 100%;
+    width: 40%;
+    gap: 3vh;
   }
 
-  .mobile-sidebar {
-    display: none;
-  }
-}
-
-/* CSS ENZO */
-
-/*CSS pour vente*/
-
-/* Styles généraux */
-p {
-  font-size: medium;
-}
-
-/* Styles pour la barre de navigation */
-#New-flavours {
-  padding: 2% 10%;
-  margin-top: 15vh;
-}
-
-#nav-bar {
-  display: flex;
-  background-color: #BBC65E;
-  height: 15vh;
-  padding: 0vh 15vh;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-#nav-bar input {
-  border: none;
-  text-decoration: none;
-  border-radius: 50vw;
-  height: 8vh;
-  width: 50vw;
-}
-
-#nav-bar button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: none;
-  background-color: white;
-  border-radius: 50vw;
-  height: 8vh;
-  width: 8vw;
-}
-
-#nav-bar button img {
-  display: none; 
-}
-
-/* Styles pour les articles */
-article {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.asset-article {
-  width: 20%;
-  padding: 3%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-
-.div-button-add-remove {
-  display: flex;
-  justify-content: center;
-}
-
-.div-button-add-remove .button-down,
-.div-button-add-remove .button-up {
-  color: white;
-  font-size: xx-large;
-  background-color: #BBC65E;
-  margin: 0.5vh 0.05vw;
-  border: none;
-  width: 3vw;
-  height: 3vw;
-}
-
-.div-button-add-remove .button-up {
-  border-top-right-radius: 80vw;
-  border-bottom-right-radius: 80vw;
-}
-.div-button-add-remove .button-down {
-  border-top-left-radius: 80vw;
-  border-bottom-left-radius: 80vw;
-}
-
-.div-button-add-remove input {
-  border: none;
-  margin: 0.5vh 1vw;
-  border-radius: 45%;
-  width: 3vw;
-  height: 3vw;
-}
-
-.div-button-add-remove .button-submit {
-  background-color: #BBC65E;
-  margin: 0.5vh 0vw;
-  border-radius: 100px;
-  border: none;
-  width: 3vw;
-  height: 3vw;
-}
-
-.div-button-add-remove img {
-  width: 2vw;
-  height: 2vw;
-}
-
-.asset-article .pack {
-  width: auto;
-}
-
- /*CSS pour vente*/
-
-#dream-team {
-  margin: 5vw;
- }
-
- .team {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
- }
-
- .team div {
-  width: 20%;
-  overflow: hidden;
-  text-align: center;
- }
-
- .team div p {
-  width: 100%;
-  text-align: justify;
- }
-
- .team img {
-  width: 20vw;
-  height: auto;
- }
-
- /*CSS profil*/
-
- .profil {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 5%
- }
-
- .profil input, .profil button {
-  margin: 1% 0%;
-  width: 20vw;
-  height: 3vh;
- }
-
- .profil button {
-  background-color: #BBC65E;
-  border-radius: 100px;
-  border: none;
-  width: 10vw;
-  height: 3vw;
-
- }
-
- #image-profil {
-  position: relative;
-  width: 20vw;
-  height: 20vw;
- }
-
- .profil img {
-  width: 20vw;
-  height: 20vw;
- }
- 
- #crayon {
-  opacity: 0%;
-  border-radius: 20%;
-  padding: 5%;
-  background-color: white;
-  position: absolute;
-  bottom: 10%;
-  right: 10%;
-  width: 2vw;
-  height: 2vw;
- }
-
- #crayon:hover{
-  opacity: 70%;
- }
-
- /*Gestion stock*/
-
- .ligne-titre {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 10vh 0vh;
- }
-
- .ligne-titre button {
-  background-color: #BBC65E;
-  font-size: large;
-  height: 7vh;
-  width: 15vw;
-  border-radius: 20px;
-  border-style: none;
- }
-
- article{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin:10vh 0vw;
- }
-
- .article {
-  z-index: 2;
-  width: 80vw;
-  background-color: #BBC65E;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 3vh 1.5vw;
-  margin: 0vh 1vw
- }
-
- .article img {
-  width: 5vw;
-  height: 5vw;
- }
-
- .asset-article {
-  display: flex;
-  flex-direction: column;
- }
-
- .button-item{
-  display: flex;
-  flex-direction: column;
- }
-
- .button-item button {
-  margin: 0.3vh 0vw;
- }
-
- .info-article {
-  z-index: 1;
-  margin: -2vh 0vh;
-  background-color: #D3D993;
-  width: 80vw;
-  display: flex;
-  justify-content: space-around;
-  padding: 1vh 1.5vw;
-  border-top-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
- }
-
- .add {
-  background-color: green;
-  border-style: none;
-  border-radius: 20px;
- }
-
- .del {
-  background-color: red;
-  border-style: none;
-  border-radius: 20px;
- }
-
- .mod {
-  background-color: gray;
-  border-style: none;
-  border-radius: 20px;
- }
-
- footer {
-  background-color: #e2c7af;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding:0px 2vw;
- }
-
- footer a {
-  width: 15%;
-  text-decoration: none;
- }
-
- footer h1 {
-  color: black;
- }
-
- .image-footer {
-  display: flex;
-  width: 15%;
-  justify-content:space-around;
- }
-
- .image-footer img {
-  width:2vw;
-  height: auto;
- }
-
- 
-@media screen and (max-width:600px) { /* Media Queries */
-
-  /*Media pour vente*/
-
-  body {
-    background-color: #F3F2DC;
-  }
-
-  h6 {
-    font-size: large;
-  }
-
-  #nav-bar p {
-    display: none;
-  }
-
-  #nav-bar button {
-    margin-left: 4vw;
+  #form-right {
+    margin-left: 2vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    background-color: white;
-    border-radius: 50vw;
-    height: 6vh;
-    width: 13vw;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
   }
 
-  #nav-bar button img {
+  .label-input {
+    margin-top: auto;
+    margin-bottom: auto ;
     display: flex;
-    width: 5vw;
-    height: 5vw;
-  }
-
-  #nav-bar input {
-    height: 6vh;
-  }
-
-  article {
-    align-items: center;
     flex-direction: column;
+    height: 20%;
+    /* border: 2px solid black; */
   }
-
-  .asset-article {
-    width: 80%;
-  }
-
-  .div-button-add-remove .button-down,
-  .div-button-add-remove .button-up,
-  .div-button-add-remove .button-text,
-  .div-button-add-remove .button-submit {
-    display: flex;
-    width: 10vw;
-    height: 11vw;
-    justify-content: center;
-    align-content: center;
-  }
-
-  .button-submit img {
-    width: 6vw;
-    height: auto;
-  }
-
-  /*Media pour equipe*/
-  .team {
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-   }
-
-   .team div {
-    width: 80%;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-   }
-
-   .team div p {
-    text-align: justify;
-    width: 100%;
-   }
-
-   .team img {
-    width: 50vw;
-   }
-
-   /* Gestion stock */
-
-   .ligne-titre{
-    flex-direction: column;
-   }
-
-   .ligne-titre button {
-    width: 50%;
-   }
-
-   .article{
-    flex-direction: column;
-   }
-
-   .article button
-   {
-    margin: 1vh 0vh;
-   }
-
-   .article img {
-    width:50%;
-    height:50%
-   }
-
-   .info-article {
-    text-align: center;
-    flex-direction: column;
-   }
-
-
+  
 }
+

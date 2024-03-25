@@ -23,6 +23,7 @@
   
   </header>
   <main>
+    
     <section id="sidebar">
       <a class="desktop-sidebar">Vente</a>
       <a class="desktop-sidebar">Histoire</a>
@@ -33,6 +34,7 @@
       <img src="images/contact.svg" class="mobile-sidebar">
       <img src="images/contact.svg" class="mobile-sidebar">
     </section>
+
     <section id="form-container">
       <h1>Formulaire de contact</h1>
       <section id="form">
@@ -57,16 +59,18 @@
         </section>
 
         <section id="form-right">
-
-          <label for="genre">Civilité</label>
-          <select id="genre" name="genre">
-            <option value="homme">Homme</option>
-            <option value="femme">Femme</option>
-            <option value="autre">Autre</option>
-          </select>
+          <section class="label-input">
+            <label for="genre">Civilité</label>
+            <select id="genre" name="genre">
+              <option value="homme">Homme</option>
+              <option value="femme">Femme</option>
+              <option value="autre">Autre</option>
+            </select>
+          </section>
+          <section id="area">
           <label for="message">Message</label>
           <textarea id="message" name="message"></textarea>
-      
+          </section>
         </section>
 
       </section>
