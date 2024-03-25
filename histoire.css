@@ -233,3 +233,35 @@ p{
       }
     }
 >>>>>>> main
+
+
+   footer {
+    position:relative;
+    bottom: -0.1;
+    width: 100%;
+    background-color: #c1c59b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   footer a {
+    margin: 0% 2%;
+    width: 15%;
+    text-decoration: none;
+   }
+
+   footer h1 {
+    color: black;
+   }
+
+   .image-footer {
+    display: flex;
+    width: 15%;
+    justify-content:space-around;
+   }
+
+   .image-footer img {
+    width:2vw;
+    height: auto;
+   }
