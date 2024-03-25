@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="admin-commandes.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    
+    <section class="sidebar-header">
+      <img src="images/hamburger.svg" id="hamburger">
+    </section>
+    
+    <section id="header">
+      <h1>Matcha</h1>
+    </section>
+    
+    <section class="sidebar-header">
+      <img src="images/profile.svg" id="profile">
+    </section>
+  
+  </header>
+  <main>
+    <section id="sidebar" class="hidden">
+      <a href="vente.html" class="desktop-sidebar">Vente</a>
+      <a href="histoire.html" class="desktop-sidebar">Histoire</a>
+      <a href="contact.html" class="desktop-sidebar">Contact</a>
+      <a href="equipe.html" class="desktop-sidebar">À propos</a>
+      <img src="images/contact.svg" class="mobile-sidebar">
+      <img src="images/contact.svg" class="mobile-sidebar">
+      <img src="images/contact.svg" class="mobile-sidebar">
+      <img src="images/contact.svg" class="mobile-sidebar">
+    </section>
+    <section id="content">
+
+      <section id="content">
+        <section id="top">
+          <h1>Gestionnaire de commandes</h1>
+          <!-- <div id="add-button">
+            Add new user
+          </div> -->
+        </section>
+        <section id="user-list">
+          <section class="user-card">
+            <section class="user-data">
+              <h3>827197857</h3>
+              <h3>123 Rue de la Paix</h3>
+            </section>
+            <section class="user-button">
+              <div class="delete-button">
+                Delete
+              </div>
+              <div class="edit-button">
+                Edit
+              </div>
+            </section>
+          </section>
+  
+          <section class="user-card">
+            <section class="user-data">
+              <h3>615221831</h3>
+              <h3>456 Rue du Commerce</h3>
+            </section>
+            <section class="user-button">
+              <div class="delete-button">
+                Delete
+              </div>
+              <div class="edit-button">
+                Edit
+              </div>
+            </section>
+          </section>
+  
+          <section class="user-card">
+            <section class="user-data">
+              <h3>626398007</h3>
+              <h3>789 Rue des Lilas</h3>
+            </section>
+            <section class="user-button">
+              <div class="delete-button">
+                Delete
+              </div>
+              <div class="edit-button">
+                Edit
+              </div>
+            </section>
+          </section>
+<!--   
+          <section class="user-card">
+            <section class="user-data">
+              <h3>451402990</h3>
+              <h3>987 Rue de la Liberté</h3>
+            </section>
+            <section class="user-button">
+              <div class="delete-button">
+                Delete
+              </div>
+              <div class="edit-button">
+                Edit
+              </div>
+            </section> -->
+          </section>
+        </section>
+      </section>
+
+    </section>
+  </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var hamburger = document.getElementById('hamburger');
+      var sidebar = document.getElementById('sidebar');
+      var content = document.getElementById('content');
+  
+      hamburger.addEventListener('click', function() {
+        sidebar.classList.toggle('hidden');
+        content.classList.toggle('full');
+      });
+    });
+  </script>
+</body>
+</html>
