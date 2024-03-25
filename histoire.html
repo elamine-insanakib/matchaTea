@@ -25,6 +25,17 @@
 </header>
 <main>
 
+    <section id="sidebar" class="hidden">
+        <a href="vente.html" class="desktop-sidebar">Vente</a>
+        <a href="histoire.html" class="desktop-sidebar">Histoire</a>
+        <a href="contact.html" class="desktop-sidebar">Contact</a>
+        <a href="equipe.html" class="desktop-sidebar">À propos</a>
+        <img src="images/contact.svg" class="mobile-sidebar">
+        <img src="images/contact.svg" class="mobile-sidebar">
+        <img src="images/contact.svg" class="mobile-sidebar">
+        <img src="images/contact.svg" class="mobile-sidebar">
+      </section>
+
     <article class="histoire">
 
     <h2>Histoire du Thé Matcha</h2>
@@ -33,7 +44,7 @@
     <p class="text">L’histoire du thé Matcha remonte au IXe siècle, lorsque le thé en poudre à été introduit au Japon par des moines bouddhistes chinois désireux d’exporter le thé en poudre qui était connu jusqu’ici qu’en Chine, mais c’est au XIIe siècle que le thé matcha à été introduit par le moine Zen Essai en les plantant dans le jardin du temple bouddhiste à Kyoto, ce serait lui qui aurait été la première personne à les moudre et ensuite à les consommer en tant que thé.</p>
 
     <p class="text">C’est d’ailleurs cette fameuse poudre verte qui aurait donné naissance à la cérémonie du thé japonais. C’est au Japon, que le thé matcha a été perfectionné car ce sont les japonais qui ont développé leurs propres techniques et préférences.</p>
-        <img src="C:\Users\InsaN\OneDrive\Documents\matchaTea\images\_b635ccdc-1268-4bf4-ae78-15b5c826658e.jpg" class="jap" alt="">
+        <img src="images/_b635ccdc-1268-4bf4-ae78-15b5c826658e.jpg" class="jap" alt="">
 
     </article>
 
@@ -47,8 +58,8 @@
     <p class="text">L'aventure du thé Matcha débute dans les collines verdoyantes d'Uji, au Japon, où les cultivateurs perpétuent des techniques ancestrales pour produire le meilleur Matcha au monde. Chaque feuille est cueillie à la main avec délicatesse, puis séchée et broyée pour obtenir une poudre fine et veloutée.</p>
     <p class="text">Le rituel de préparation dans les maisons de thé japonaises, où le Matcha est fouetté jusqu'à former une mousse onctueuse, représente une expérience à part entière. En savourant une tasse de thé Matcha, on plonge dans une tradition séculaire, où simplicité et élégance se marient pour offrir une expérience sensorielle inoubliable, révélant ainsi toute la richesse de la culture japonaise.</p>
 
-    <img src="C:\Users\InsaN\OneDrive\Documents\matchaTea\images\_8ead0d4f-07bd-4964-91e4-e25592212441.jpg" class="collines" alt="">
-    <img src="C:\Users\InsaN\OneDrive\Documents\matchaTea\images\_08203cce-6307-43dd-b98a-2037d84a99fc.jpg" class="collines" alt="">
+    <img src="images/_8ead0d4f-07bd-4964-91e4-e25592212441.jpg" class="collines" alt="">
+    <img src="images/_08203cce-6307-43dd-b98a-2037d84a99fc.jpg" class="collines" alt="">
 
     </article>
 
@@ -105,12 +116,26 @@
     <p class="text">Au sein de notre entreprise Matcha Tea, nous tenons à cœur à respecter les valeurs ancestrales japonaises liées au thé matcha, c’est pourquoi toutes nos feuilles de thé vert sont issus du Tencha qui demeurent le plus haut en qualité. Nous prenons soin de cultiver les plus belles feuilles de thé vert qui sont cultivées pour les moudre, notamment grâce à leur grade Cérémonie qui est le plus haut grade en terme de qualité pour le Matcha.</p>
     <p class="text">Afin de bénéficier d’une expérience gustative unique composé de saveurs uniques, veloutée et sucrée, avec en prime un umami puissant qui signifie en japonais “savoureux”, la 5e saveur de base avec le salé, le sucré, l’amer et l’acide car chez les nippons, l’umami est un signe d’une qualité absolue.</p>
 
-    <img src="C:\Users\InsaN\OneDrive\Documents\matchaTea\images\_6f540e77-1594-4d4e-a3a4-c4f9660dbca1.jpg" class="feuille" alt="">
+    <img src="images/_6f540e77-1594-4d4e-a3a4-c4f9660dbca1.jpg" class="feuille" alt="">
+
 
     </article>
 
     <footer>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var hamburger = document.getElementById('hamburger');
+          var sidebar = document.getElementById('sidebar');
+          var content = document.getElementById('content');
+      
+          hamburger.addEventListener('click', function() {
+            sidebar.classList.toggle('hidden');
+            content.classList.toggle('full');
+          });
+        });
+      </script>
 
 </main>
 </body>

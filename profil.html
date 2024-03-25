@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="enzo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Molle&family=Text+Me+One&display=swap" rel="stylesheet">
+  <title>Profil</title>
+</head>
+<body"> 
+  <header> <!--HEADER ET BURGER MENU-->
+    
+    <section class="sidebar-header">
+      <img src="../images/hamburger.svg" id="hamburger">
+    </section>
+    
+    <section id="header">
+      <a href="../index.html"><h1>Matcha</h1></a>
+    </section>
+    
+    <section class="sidebar-header">
+      <img src="../images/profile.svg" id="profile">
+    </section>
+  
+  </header> <!--FIN DU HEADER ET BURGER MENU-->
+
+  <section id="sidebar" class="hidden">
+    <a href="vente.html" class="desktop-sidebar">Vente</a>
+    <a href="../histoire.html" class="desktop-sidebar">Histoire</a>
+    <a href="../contact.html" class="desktop-sidebar">Contact</a>
+    <a href="" class="desktop-sidebar">À propos</a>
+    <img src="../images/contact.svg" class="mobile-sidebar">
+    <img src="../images/contact.svg" class="mobile-sidebar">
+    <img src="../images/contact.svg" class="mobile-sidebar">
+    <img src="../images/contact.svg" class="mobile-sidebar">
+  </section>
+
+  <article class="profil">
+    <div id="image-profil">
+      <img src="../images/profile.svg">
+      <img src="../images/crayon.png" id="crayon">
+    </div>
+      <input type="text" name="nom" id="nom" placeholder="Nom">
+      <input type="text" name="prenom" id="prenom" placeholder="Prenom">
+      <input type="mail" name="mail" id="mail" placeholder="Mail">
+      <input type="tel" name="tel" id="tel" placeholder="Numéro telephone">
+      <button type="submit">Valider</button>
+  </article>
+  
+  <footer>
+    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0?"><p>Mentions legale</p></a>
+    <a href="http://index.html"><h1>Matcha</h1></a>
+    <div class="image-footer">
+      <a href="http://facebook.com" target="_blank"><img src="../images/facebook-app-symbol.png" alt=""></a>
+      <a href="http://twitter.com" target="_blank"><img src="../images/social-media.png" alt=""></a>
+      <a href="http://instagram.com" target="_blank"><img src="../images/instagram.png" alt=""></a>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var hamburger = document.getElementById('hamburger');
+      var sidebar = document.getElementById('sidebar');
+    
+      hamburger.addEventListener('click', function() {
+        sidebar.classList.toggle('hidden'); // Changez 'full' en 'hidden'
+      });
+    });
+  </script>
+  
+  
+</body>
+</html>
