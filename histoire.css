@@ -1,0 +1,232 @@
+  header {
+    background-color: #e2c7af;
+    font-family: Molle, cursive;  
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+  }
+  
+  header > h1 {
+    font-size: 5vh;
+
+  }
+  
+  .sidebar-header {
+    height: 12vh;
+    border: 1px solid black;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #header {
+    height: 12vh;
+    width: 60%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center ;
+  }
+  
+  
+  #hamburger {
+    /* margin-left: 1%; */
+    width: auto;
+    height: 35%;
+  }
+
+  #profile {
+    width: auto;
+    height: 45%;
+  
+  }
+
+  body{
+    text-align: center;
+    background-color: #8da9a9;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+.marger{
+    width: 100%;
+    height: 200px;
+    background-color: #FFEBCD;
+}
+
+header{
+    background-color: #FFEBCD;
+}
+
+.espace{
+    margin-bottom: 30px;
+    background-color: #e2c7af;
+    height: 3px;
+}
+
+.title_tea{
+    font-size: 35px;
+    font-family: "Brush Script MT", cursive;
+    color: black;
+    font-weight: bold;
+    padding-top: 0px;
+}
+
+.black_title{
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.text{
+    text-align: left;
+}
+
+.text_decal{
+    text-align: left;
+    margin-left: 45px;
+}
+
+.proprietes{
+    text-align: left;
+    margin-left: 70px;
+    font-size: 18px;
+}
+
+.collines{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    margin: 20px;
+}
+
+.jap{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.feuille{
+  height: 300px;
+  width: 300px;
+  margin-bottom: 15px;
+  border: 2px solid black;
+}
+
+footer{
+  background-color: #e2c7af;
+  padding: 20px 0;
+}
+
+p{
+  font-size: 18px;
+}
+
+@media screen and (max-width: 440px) {
+
+    .text_decal{
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    .proprietes{
+      margin: 0;
+      font-size: 12px;
+    }
+
+    .feuille{
+      height: 220px;
+      width: 220px;
+    }
+
+    .jap{
+      height: 220px;
+      width: 220px;
+    }
+
+    .collines{
+      height: 220px;
+      width: 220px;
+    }
+
+    p{
+      font-size: 12px;
+    }
+
+    footer{
+        padding: 5px;
+      }
+
+      .espace{
+        height: 1px;
+      }
+    }
+
+    /* CSS SIDEBAR */
+
+    #content {
+      width: 80%;
+      height: 88vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    #content.full {
+      width: 100%;
+      height: 88vh;
+    }
+    
+    #sidebar.hidden {
+      display: none;
+    }
+    
+    #sidebar {
+      background-color: #e2c7af;
+      width: 20%;
+      height: 88vh;
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      gap: 15vh;
+      justify-content: center;
+      font-weight: 900;
+    }
+    
+    
+    #sidebar > a {
+      font-size: 3vh;
+      text-decoration: none;
+      color: #3d405b;
+      font-family: Text Me One, sans-serif;
+    
+    }
+    
+    .mobile-sidebar {
+      display: flex;
+      height: auto;
+      width: 45%;
+    }
+    
+    .desktop-sidebar {
+      display: none;
+    }
+
+    @media (min-width: 600px) {
+      body {
+        background-color: #F3F2DC;
+      }  
+      
+        .desktop-sidebar {
+          display: flex;
+        }
+    
+        .mobile-sidebar {
+          display: none;
+        }
+    
+      }
